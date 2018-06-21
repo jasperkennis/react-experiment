@@ -1,8 +1,14 @@
-var gulp = require("gulp");
-var babel = require("gulp-babel");
+var gulp = require('gulp'),
+  babel = require('gulp-babel');
 
-gulp.task("default", function () {
-  return gulp.src("src/js/app.js")
+gulp.task('es6', function () {
+  return gulp.src('src/js/app.js')
     .pipe(babel())
-    .pipe(gulp.dest("dist"));
+    .pipe(gulp.dest('dist'));
 });
+
+gulp.task('watch', function () {
+  gulp.watch('src/js/*.js', ['es6']);
+});
+
+gulp.task('default', ['es6', 'watch']);
