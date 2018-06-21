@@ -1,64 +1,40 @@
-'use strict';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.App = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = require('react-dom');
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var App = exports.App = function (_React$Component) {
-  _inherits(App, _React$Component);
-
-  function App() {
-    _classCallCheck(this, App);
-
-    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+export class App extends React.Component {
+  render() {
+    return React.createElement(
+      'div',
+      { className: 'shopping-list' },
+      React.createElement(
+        'h1',
+        null,
+        'Shopping List for ',
+        this.props.name
+      ),
+      React.createElement(
+        'ul',
+        null,
+        React.createElement(
+          'li',
+          null,
+          'Instagram'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'WhatsApp'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Oculus'
+        )
+      )
+    );
   }
+}
 
-  _createClass(App, [{
-    key: 'hello',
-
-
-    /**
-     * Test function
-     * @return {string} Test string
-     */
-    value: function hello() {
-      return this.giveMeAString();
-    }
-
-    /**
-     * [giveMeAString description]
-     * @return {[type]} [description]
-     */
-
-  }], [{
-    key: 'giveMeAString',
-    value: function giveMeAString() {
-      return 'Hello';
-    }
-  }]);
-
-  return App;
-}(_react2.default.Component);
-
-var a = new App();
+const a = new App();
 
 a.hello();
