@@ -39,3 +39,7 @@ var App = exports.App = function () {
 
   return App;
 }();
+
+var a = new App();
+
+a.hello();

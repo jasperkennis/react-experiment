@@ -16,3 +16,7 @@ export class App {
     return 'Hello';
   }
 }
+
+const a = new App();
+
+a.hello();
