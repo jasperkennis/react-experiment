@@ -1,4 +1,7 @@
-export class App {
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+export class App extends React.Component {
 
   /**
    * Test function
