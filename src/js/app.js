@@ -2,21 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 export class App extends React.Component {
-
-  /**
-   * Test function
-   * @return {string} Test string
-   */
-  hello () {
-    return this.giveMeAString();
-  }
-
-  /**
-   * [giveMeAString description]
-   * @return {[type]} [description]
-   */
-  static giveMeAString () {
-    return 'Hello';
+  render () {
+    return (
+      <div className="shopping-list">
+        <h1>Shopping List for {this.props.name}</h1>
+        <ul>
+          <li>Instagram</li>
+          <li>WhatsApp</li>
+          <li>Oculus</li>
+        </ul>
+      </div>
+    );
   }
 }
 
