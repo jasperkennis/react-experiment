@@ -1,4 +1,10 @@
 {
+	"description": "Experimental project.",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"license": "UNLICENSED",
 	"devDependencies": {
 		"babel-cli": "~6.26.0"
 	}
