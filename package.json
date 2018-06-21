@@ -2,12 +2,13 @@
 	"description": "Experimental project.",
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://github.com/jasperkennis/react-experiment"
 	},
 	"license": "UNLICENSED",
 	"devDependencies": {
 		"babel-cli": "~6.26.0",
-		"babel-preset-env": "~1.7.0"
+		"babel-preset-env": "~1.7.0",
+		"gulp": "~3.9.1"
 	},
 	"babel": {
 		"presets": ["env"]
