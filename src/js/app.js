@@ -1,3 +1,9 @@
+/**
+ * Test function
+ * @return {string} Test string
+ */
 function hello () {
-	return 'hello';
+  return 'hello';
 }
+
+hello();
