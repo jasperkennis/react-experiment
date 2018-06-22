@@ -16,6 +16,7 @@ export class App extends React.Component {
   }
 }
 
-const a = new App();
-
-a.hello();
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
