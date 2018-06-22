@@ -10,11 +10,13 @@
 		"babel-preset-env": "~1.7.0",
 		"babel-preset-react": "^6.24.1",
 		"gulp": "~3.9.1",
-		"gulp-babel": "^7.0.1"
+		"gulp-babel": "^7.0.1",
+		"webpack-stream": "^4.0.3"
 	},
 	"babel": {
 		"presets": [
-			"react"
+			"react",
+			"env"
 		]
 	},
 	"dependencies": {
